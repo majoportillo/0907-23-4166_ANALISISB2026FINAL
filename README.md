@@ -1,4 +1,41 @@
 # María José del Carmen Portillo López 0907-23-4166 ANALISISB2026FINAL
+Prototipo de API REST para la gestión y escalamiento de incidentes de red, desarrollado como evaluación final del curso de Análisis de Sistemas.
+
+## Descripción del Proyecto
+Sistema diseñado para la administración, asignación y seguimiento de incidentes de red, optimizando los tiempos de respuesta y cumplimiento de SLAs mediante estados definidos y asignación de técnicos.
+
+## Estructura del Proyecto
+- `main.py`: Punto de entrada de la aplicación y definición de endpoints.
+- `database.py`: Configuración de la conexión a base de datos (SQLite) y sesión.
+- `models.py`: Modelos de datos (ORM) y definición de estados.
+- `schemas.py`: Esquemas de validación de datos (Pydantic V2).
+- `test_main.py`: Pruebas unitarias automatizadas.
+- `requirements.txt`: Dependencias del sistema.
+- `render.yaml`: Configuración para despliegue en la nube (PaaS).
+
+## Link de Render https://zero907-23-4166-analisisb2026final.onrender.com/docs#/
+## Instrucciones para Probar el Proyecto
+
+### Localmente:
+1. Clonar el repositorio: `git clone <URL_DEL_REPO>`
+2. Crear entorno virtual: `python -m venv venv`
+3. Activar entorno: `.\venv\Scripts\Activate.ps1`
+4. Instalar dependencias: `pip install -r requirements.txt`
+5. Ejecutar servidor: `uvicorn main:app --reload`
+6. Acceder a la documentación interactiva (Swagger UI): `http://127.0.0.1:8000/docs`
+
+### En la Nube (Render):
+El despliegue está disponible en la URL proporcionada por Render. Puede probar los endpoints directamente en la sección `/docs` de la URL base del servicio.
+
+## Informe de Uso de Inteligencia Artificial
+
+### 1. Prompts Enviados
+Se utilizaron prompts para:
+- Estructurar el proyecto en arquitectura de capas (MVC/ORM).
+- Configurar el entorno de desarrollo con FastAPI y SQLAlchemy 2.0.
+- Implementar validaciones de Pydantic V2.
+- Configurar pruebas unitarias con `pytest` y automatizar el despliegue mediante `render.yaml`.
+
 
 # Historias de usuario - NetGuard GT
 
@@ -150,3 +187,6 @@ Como técnico, quiero ver la lista de mis incidentes activos, para organizar mi 
 **Priorización:** Baja
 
 ---
+
+
+
