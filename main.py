@@ -6,6 +6,9 @@ import models, database, schemas
 models.Base.metadata.create_all(bind=database.engine)
 
 app = FastAPI()
+from fastapi.openapi.docs import get_swagger_ui_html
+
+app = FastAPI(docs_url="/docs", redoc_url="/redoc")
 
 # Dependencia para obtener la sesión de BD
 def get_db():
