@@ -1,6 +1,6 @@
 # María José del Carmen Portillo López 0907-23-4166 ANALISISB2026FINAL
 
-#Historias de usuario - NetGuard GT
+# Historias de usuario - NetGuard GT
 
 ### 1. Historia de usuario: Gestión de Registro de Incidentes
 
